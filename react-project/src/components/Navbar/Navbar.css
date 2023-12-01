@@ -1,0 +1,12 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .8rem 6rem;
+    border: 1px solid black;
+}
+
+.contentNav{
+    display: flex;
+    gap: 2rem;
+}
