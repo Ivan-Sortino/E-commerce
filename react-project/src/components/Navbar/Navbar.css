@@ -1,3 +1,6 @@
+:root{
+    --clr-gris: #d0cfcf
+}
 header{
     display: flex;
     justify-content: space-between;
@@ -5,7 +8,7 @@ header{
     height: 100px;
     align-items: center;
     gap: 5rem;
-    border-bottom: 1px solid #d0cfcf;
+    border: 1px solid var(--clr-gris);
 }
 
 .navbar{
@@ -24,27 +27,32 @@ nav a{
     line-height: 34px;
     color: #6e6b69;
 }
-
+nav a:hover{
+    transition: .5;
+    color: black;
+}
 .dos{
     display: flex;
     align-items: center;
     gap: 4rem;
-    border-left: 1px solid #d0cfcf;
-    padding: 0px 0px 0px 50px;
+    border: 1px solid var(--clr-gris);
+    padding: 0px 0px 0px 20px;
 }
 .dos input{
     outline: none;
     border-style: none;
+    font-size: 15px;
 }
 .bi.bi-search{
     margin-right: 1rem;
 }
 .Cart{
-    border-left: 1px solid #d0cfcf;
-    padding: 36px 50px;
+    border-left: 1px solid var(--clr-gris);
+    padding: 35px 50px;
 }
 
 .Cart a img{
     max-width: 26px;
 }
+
 
