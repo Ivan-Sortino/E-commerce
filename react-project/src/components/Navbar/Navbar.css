@@ -4,8 +4,6 @@
 header{
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    height: 100px;
     align-items: center;
     gap: 5rem;
     border: 1px solid var(--clr-gris);
@@ -32,10 +30,10 @@ nav a:hover{
     color: black;
 }
 .dos{
+    border-left: 1px solid var(--clr-gris);
     display: flex;
     align-items: center;
     gap: 4rem;
-    border: 1px solid var(--clr-gris);
     padding: 0px 0px 0px 20px;
 }
 .dos input{
