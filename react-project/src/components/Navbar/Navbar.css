@@ -7,6 +7,11 @@ header{
     align-items: center;
     gap: 5rem;
     border: 1px solid var(--clr-gris);
+    /* position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    background-color: white; */
 }
 
 .navbar{
@@ -21,7 +26,8 @@ header{
 
 nav a{
     padding: 0 12px;
-    font-size: 20px;
+    font-size: 17px;
+    font-weight: 600;
     line-height: 34px;
     color: #6e6b69;
 }

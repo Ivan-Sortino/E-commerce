@@ -19,5 +19,12 @@
         "material": "ANILLOS - PLATA",
         "precio": "$97.191,00",
         "img": "https://www.0800donrouch.com.ar//images/570/0800_DON_ROUCH_ANILLO_SOLITARIO_PLATA2020-10-12-06-00-59pm.jpg"
+    },
+    {
+        "id": 4,
+        "nombre": "Dije Solitario 0800 Don Rouch",
+        "material": "DIJES - PLATA",
+        "precio": "$52.191,00",
+        "img": "https://www.0800donrouch.com.ar//images/823/dije_solitario_0800_don_rouch_plata2022-11-17-01-03-26pm.png"
     }
 ]

@@ -1,40 +1,39 @@
 import React, { useContext } from 'react'
 import { dataContext } from '../DataContext/DataContext'
-
+import './Products.css'
 
 
 const Products = () => {
 
     const { data } = useContext(dataContext) //traemos la data del dataContext
     return (
-        <>
+        <div className='grid'>
 
             {
                 data.map((product) => {
                     return (
                         <div key={product.id}>
-                            <img src={product.img} alt="" /> {/*Imagen del producto*/}
-                            
-                            <div> {/*div para entrar en el producto con hover*/}
-                                <h3>DETALLE</h3>
+                            <div className='contentProduct'>
+                                <img src={product.img} alt="" className='imgProduct' /> {/*Imagen del producto*/}
+                                <div className='btn-detalle'>DETALLE</div>
                             </div>
 
-                            <div> {/*div conjunto*/}
-                                <div> {/*div para la primera p*/}
-                                    <p>{product.material}</p>
+                            <div className='contentInfo'> {/*div conjunto*/}
+                                <div >
+                                    <span className='material'>{product.material}</span>
                                 </div>
-                                <div>{/*div para el nombre*/}
-                                    <h6>{product.nombre}</h6>
+                                <div>
+                                    <h4>{product.nombre}</h4>
                                 </div>
-                                <div> {/*div para precios descuentos */}
-                                    <p>{product.precio}</p>
+                                <div> 
+                                    <p className='precio'>{product.precio} <span>ó en 3 cuotas</span> </p>
                                 </div>
                             </div>
                         </div>
                     )
                 })
             }
-        </>
+        </div>
     )
 
 }
