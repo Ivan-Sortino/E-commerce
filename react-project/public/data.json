@@ -2,21 +2,21 @@
     {
         "id": 1,
         "nombre": "Chain Solitario 0800 Don Rouch",
-        "dije/material": "CHAINS - PLATA",
+        "material": "CHAINS - PLATA",
         "precio": "$59.493,00",
         "img": "https://www.0800donrouch.com.ar//images/825/CHAIN-SOLITARIO-0800-DON-ROUCH2022-11-17-02-41-26pm.png"
     },
     {
         "id": 2,
         "nombre": "Dije Solitario 0800 Don Rouch",
-        "dije/material": "DIJES - PLATA",
+        "material": "DIJES - PLATA",
         "precio": "$52.191,00",
         "img": "https://www.0800donrouch.com.ar//images/823/dije_solitario_0800_don_rouch_plata2022-11-17-01-03-26pm.png"
     },
     {
         "id": 3,
         "nombre": "Anillo Solitario Plata 0800 Don Rouch",
-        "dije/material": "ANILLOS - PLATA",
+        "material": "ANILLOS - PLATA",
         "precio": "$97.191,00",
         "img": "https://www.0800donrouch.com.ar//images/570/0800_DON_ROUCH_ANILLO_SOLITARIO_PLATA2020-10-12-06-00-59pm.jpg"
     }
