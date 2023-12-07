@@ -1,26 +1,36 @@
-.grid{
+:root{
+    --clr-gris: #9b898d;
+    --clr-verde: #229303;
+}
+
+/* Hago que los productos sean responsive gracias al displey grid */
+.conteinerPadre {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-
     justify-items: center;
     align-items: center;
-    margin-top: 3rem;
+    margin-top: 160px;
 }
-.grid> :nth-child(3n + 1) {
-    grid-column: 2; /* Ocupar dos columnas */
-  }
 
-.contentProduct {
+/* Cuando haya mas de 3 columnas el 4to se posiciona abajo */
+.conteinerPadre > :nth-child(3n + 1) {
+    grid-column: 1;
+}
+
+/* Relative para que el texto lo pueda posicionar */
+.contentImg-detalle {
     position: relative;
     width: 280px;
     cursor: pointer;
 }
 
-.imgProduct {
+/* Imagen */
+.imgProduct { 
     width: 100%;
     height: auto;
 }
 
+/* Boton detalle */
 .btn-detalle {
     position: absolute;
     top: 85%;
@@ -34,29 +44,38 @@
     font-size: .9rem;
 }
 
-.contentProduct:hover .btn-detalle{
+/* Hover del boton para que aparezca */
+.contentImg-detalle:hover .btn-detalle {
     opacity: 1;
     transition: 0.5s ease;
 }
 
-.btn-detalle:hover{
-    background-color: rgba(0, 0, 0, 0.697)  ;
+/* Boton mas claro cuando paso por encima */
+.btn-detalle:hover {
+    background-color: rgba(0, 0, 0, 0.697);
 }
 
-.contentInfo div{
+/* Espaciado entre los parrafos */
+.contentInfo div {
     margin-bottom: 10px;
 }
-.material{
+
+/* Decoracion del Material/aleacion */
+.material {
     font-size: .7rem;
     font-weight: 600;
-    color: #9b898d;
+    color: var(--clr-gris);
 }
 
-.precio{
+/* Decoracion en el precio del producto */
+.precio {
     font-weight: 600;
+    line-height: 25px;
 }
-
-.precio span{
-    color: #9b898d;
+.precio span {
+    color: var(--clr-gris);
     font-weight: 100;
+}
+.precio strong {
+    color: var(--clr-verde);
 }

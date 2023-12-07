@@ -20,7 +20,7 @@ const Navbar = () => {
 
             <div className='dos'>
                 <div>
-                    <i className="bi bi-search"></i>
+                    <button><i className="bi bi-search"></i></button>
                     <input type="text" placeholder='Search' />
                 </div>
                 <div className='Cart'>
