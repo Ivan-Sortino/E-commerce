@@ -1,13 +1,17 @@
 import React from 'react'
 import logo from "../../assets/LogoDonRouch.png"
 import cart from "../../assets/cart.png"
+import { Link } from 'react-router-dom'
 import './Navbar.css'
 
 const Navbar = () => {
     return (
         <header>
             <div className='navbar'>
-                <img src={logo} alt="" />
+                <Link to={'/'}>
+                    <img src={logo} alt="" />
+                </Link>
+                
                 <nav>
                     <a href="#">Home</a>
                     <a href="#">Don Rouch</a>
@@ -18,18 +22,21 @@ const Navbar = () => {
                 </nav>
             </div>
 
-            <div className='dos'>
-                <div>
+            <div className='content'>
+                <div className='boxSearch'>
                     <button><i className="bi bi-search"></i></button>
                     <input type="text" placeholder='Search' />
                 </div>
                 <div className='Cart'>
-                    <a href="">
-                        <img src={cart} alt="" />
-                        <span>0</span>
-                    </a>
+                    <div className='boxCart'>
+                        <a href="">
+                            <img src={cart} alt="" />
+                            <span>0</span>
+                        </a>
+                    </div>
+
                 </div>
-                
+
             </div>
 
 

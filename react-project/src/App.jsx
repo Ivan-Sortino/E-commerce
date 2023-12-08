@@ -1,4 +1,4 @@
-import { Navbar, DataProvider, Products } from './components'
+import { Navbar, DataProvider } from './components'
 
 import './App.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
@@ -11,12 +11,12 @@ function App() {
 
 
   return (
-    <BrowserRouter>
+    <BrowserRouter> {/* englobamos a toda la aplicacion para poder manejar las rutas de otra pagina mediante el react router*/}
       <DataProvider> {/* englobamos a toda la aplicacion para poder distribuir todos los datos*/}
         <Navbar />
-        <Routes>
-          <Route path="/" element={<PaginaInicio/>} />
-          <Route path="/Products/:nombre" element={<ProductDetails />} />
+        <Routes> {/* avisamos que vamos a crear rutas*/}
+          <Route path="/" element={<PaginaInicio/>} /> {/* creamos las rutas*/}
+          <Route path="/Products/:id" element={<ProductDetails />} />
         </Routes>
 
       </DataProvider>

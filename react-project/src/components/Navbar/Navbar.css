@@ -1,12 +1,12 @@
 :root{
-    --clr-gris: #d0cfcf
+    --clr-bordes: #e5e4e4;
 }
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 5rem;
-    border: 1px solid var(--clr-gris);
+    border: 1px solid var(--clr-bordes);
     position: fixed;
     z-index: 1;
     top: 0;
@@ -36,14 +36,14 @@ nav a:hover{
     transition: .5;
     color: black;
 }
-.dos{
-    border-left: 1px solid var(--clr-gris);
+.content{
+    border-left: 1px solid var(--clr-bordes);
     display: flex;
     align-items: center;
-    
     padding: 0px 0px 0px 20px;
+    position: relative;
 }
-.dos input{
+.boxSearch input{
     outline: none;
     border-style: none;
     font-size: 15px;
@@ -52,20 +52,36 @@ nav a:hover{
     height: 85px;
     margin-left: 2.5rem;
 }
-.bi.bi-search{
+.boxSearch button {
     position: absolute;
     z-index: 1;
     top: 40%;
-    left: 73%;
-    
+    background-color: transparent;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
 }
 .Cart{
-    border-left: 1px solid var(--clr-gris);
-    padding: 0px 50px;
+    border-left: 1px solid var(--clr-bordes);
+    position: relative;
+    width: 120px;
+    height: 85px;
 }
 
-.Cart a img{
-    max-width: 26px;
+.boxCart a img{
+    width: 25px;
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    z-index: 1;
+}
+.boxCart a span{
+    font-size: 1.3rem;
+    font-weight: 900;
+    position: absolute;
+    top: 20%;
+    left: 55%;
+    z-index: 1;
 }
 
 

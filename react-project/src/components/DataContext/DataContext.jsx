@@ -1,7 +1,9 @@
 import React, { createContext, useEffect, useState } from 'react'
 import axios from 'axios';
 
-export const dataContext = createContext() //el createContext lo genero para poder pasar los datos del data.json al DataProvider
+
+//el createContext lo genero para poder pasar los datos del data.json al DataProvider
+export const dataContext = createContext() 
 
 
 
