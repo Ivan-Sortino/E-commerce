@@ -1,0 +1,17 @@
+.contenedor{
+    margin-top: 160px;
+}
+
+.productContent{
+    display: flex;
+    height: 100vh;
+}
+
+.image img{
+    width: 100%;
+}
+
+.image{
+    flex: 1;
+    margin: 10px;
+}

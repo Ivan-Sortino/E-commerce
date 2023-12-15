@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "nombre": "Chain Solitario 0800 Don Rouch",
+        "material": "CHAINS - PLATA",
+        "precio": 59.493,
+        "cuota": 19.831,
+        "description": "La Chain Solitario 0800 Don Rouch es un diseño que representa la esencia del Enfoque <br> para alcanzar el éxito, mejor solo que mal acompañado.  Un clásico eterno con 4 colores de piedra: rojo, azul, violeta y blanco ¿Cuál vas a llevar?",
+        "image": "https://www.0800donrouch.com.ar/images/825/0800_don_rouch_chain_solitario_plata2022-11-17-02-41-24pm.png"
+    },
+    {
+        "id": 2,
+        "nombre": "Dije Solitario 0800 Don Rouch",
+        "material": "DIJES - PLATA",
+        "precio": 52.191,
+        "cuota": 17.397,
+        "description": "La Chain Solitario 0800 Don Rouch es un diseño que representa la esencia del Enfoque para alcanzar el éxito, mejor solo que mal acompañado.  Un clásico eterno con 4 colores de piedra: rojo, azul, violeta y blanco ¿Cuál vas a llevar?",
+        "image": "https://www.0800donrouch.com.ar/images/823/0800_don_rouch_dije_solitario_plata2022-11-17-02-48-31pm.png"
+    },
+    {
+        "id": 3,
+        "nombre": "Anillo Solitario Plata 0800 Don Rouch",
+        "material": "ANILLOS - PLATA",
+        "precio": 97.191,
+        "cuota": 32.397,
+        "description": "La Chain Solitario 0800 Don Rouch es un diseño que representa la esencia del Enfoque para alcanzar el éxito, mejor solo que mal acompañado.  Un clásico eterno con 4 colores de piedra: rojo, azul, violeta y blanco ¿Cuál vas a llevar?",
+        "image": "https://www.0800donrouch.com.ar/images/570/ANILLO_SOLITARIO_0800_DON_ROUCH_PLATA2020-10-12-06-02-06pm.jpg"
+    }
+]

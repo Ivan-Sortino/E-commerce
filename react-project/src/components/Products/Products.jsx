@@ -13,9 +13,10 @@ const Products = () => {
 
             {
                 data.map((product) => {
+                    const idClean = product.id.toString() //Paso al id como string para que no aparezcan letras ni simbolos
                     return (
                         <div key={product.id}>
-                            <Link to={`/products/${product.id}`}>
+                            <Link to={`/item/${idClean}`}> 
                                 <div className='contentImg-detalle'>
                                     <img src={product.img} alt="" className='imgProduct' /> {/*Imagen del producto*/}
                                     <div className='btn-detalle'>DETALLE</div>

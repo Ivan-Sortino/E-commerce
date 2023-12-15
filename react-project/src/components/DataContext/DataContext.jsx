@@ -1,6 +1,6 @@
 import React, { createContext, useEffect, useState } from 'react'
 import axios from 'axios';
-
+import singleProduct from '../../../public/singleProduct.json'
 
 //el createContext lo genero para poder pasar los datos del data.json al DataProvider
 export const dataContext = createContext() 
@@ -28,3 +28,19 @@ const DataProvider = ({ children }) => {
 }
 
 export default DataProvider
+
+
+
+export const PedirItemPorId = (id) =>{
+    return new Promise((resolve, reject) => {
+        const item = singleProduct.find((el) => el.id === id)
+
+        if (item) {
+            resolve(item)
+        } else {
+            reject({
+                error: "No se encontro el producto"
+            })
+        }
+    })
+}
