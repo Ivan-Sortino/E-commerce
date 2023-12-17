@@ -1,8 +1,3 @@
-:root{
-    --clr-gris: #9b898d;
-    --clr-verde: #229303;
-}
-
 /* Hago que los productos sean responsive gracias al displey grid */
 .conteinerPadre {
     display: grid;

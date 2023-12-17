@@ -22,20 +22,21 @@ const ProductDetails = () => {
             {item &&
                 <>
                     <div className='productContent'>
-                        <div className='image'>
+                        <div className='mitad'>
                             <img src={item.image} alt="" />
                         </div>
 
-                        <div className='image'>
-                            <span>{item.material}</span>
-                            <h1>{item.nombre}</h1>
-                            <p>${item.precio}</p>
-                            <p>PRECIO EN PESOS ARGENTINOS</p>
-                            <p>En 3 cuotas sin interés de <span>${item.cuota}</span></p>
-                            <p>La Chain Solitario 0800 Don Rouch es un diseño que representa la esencia del Enfoque <br />
+                        <div className='texto'>
+                            <div className='materialText'><span >{item.material}</span></div>
+                            <div className='nombreProducto'><h1>{item.nombre}</h1></div>
+                            <div className='precioP'><p>${item.precio}</p></div>
+                            <div className='cuotas'><p>En 3 cuotas sin interés de <span>${item.cuota}</span></p></div>
+                            <div className='pesosArg'><p>PRECIO EN PESOS ARGENTINOS</p></div>
+                            <div className='descripcion'><p>La Chain Solitario 0800 Don Rouch es un diseño que representa la esencia del Enfoque <br />
                                 para alcanzar el éxito, mejor solo que mal acompañado. Un clásico eterno con 4 <br />
-                                colores de piedra: rojo, azul, violeta y blanco ¿Cuál vas a llevar?</p>
-                            <button>Agregar</button>
+                                colores de piedra: rojo, azul, violeta y blanco ¿Cuál vas a llevar?</p></div>
+
+                            <button>AGREGAR</button>
                         </div>
                     </div>
 
